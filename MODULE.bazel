@@ -1,0 +1,12 @@
+module(
+    name = "com_github_gflags_example",
+    version = "0.0.0",
+)
+
+bazel_dep(name = "gflags")
+
+git_override(
+    module_name = "gflags",
+    commit = "bd97282b33b9397abab2db47776b0d4fc9762d22",
+    remote = "https://github.com/gflags/gflags.git",
+)
